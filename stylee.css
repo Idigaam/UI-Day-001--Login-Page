@@ -1,3 +1,7 @@
+*{
+    padding: 0;
+}
+
 
 body {
     margin: 0;
@@ -106,31 +110,92 @@ nav a:hover {
 }
 
 .hori {
-   margin: 150px;
-   position: relative;
-   bottom: 110px;
+    margin-top: 10px;
+    font-family: sans-serif;
+    margin: auto 132px;
+    font-size: 20px;
+    max-width: 600px;
+    position: relative;
 }
 
 .hori::before {
-    margin: 13px;
     content: "";
     display: block;
-    width: 75px;
+    width: 100px;
     height: 1px;
     background: blue;
     position: absolute;
-    right:535px;
-    
+   left: -110px;
+   top: 10px;
 }
 
 .hori::after {
-    margin: px;
     content: "";
     display: block;
-    width: 38px;
+    width: 100px;
     height: 1px;
     background: blue;
     position: absolute;
-    left: 30px;
+    left: 150px;
+    top: 10px;
 
+
+}
+
+
+.stage {
+    margin: auto 32px;
+    display: flex;
+    gap: 80px;
+}
+
+.et-1 {
+    border: 1px solid blue;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.et-2 {
+    border: 1px solid blue;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.et-3 {
+    border: 1px solid blue;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.inde{
+    width: 500px;
+    position: absolute;
+    right: 10px;
+    top: -86px;
+}
+
+@media only screen and (max-width:1200px) {
+    /*Tablets[601px -> 1200px]*/
+
+    .inde {
+        width: 250px;
+    }
+}
+    
+@media only screen and (max-width:600px) {
+    /*Big smartphones[426px-> 600px]*/
+    nav ul {
+        display: none;
+    }
+
+    .inde {
+        display: none;
+        width: 20px;
+    }
+
+}
+@media only screen and (max-width:425px) {
+        /*small smartphones[325px -> 425px]*/
+    
+       
 }
